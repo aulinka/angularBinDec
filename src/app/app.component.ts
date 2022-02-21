@@ -33,4 +33,17 @@ export class AppComponent {
       console.log(pom)
     }
   }
+  onCheckBoxChange(){
+    console.log(this.bits);
+    let n = 0;
+    for (let i = 0; i < this.bits.length; i++) {
+      if (this.bits[i]) {
+        n += Math.pow(2, this.bits.length - 1 - i);
+      }
+    }
+    this.decimal =n;
+  }
+  trackByIndex(index: number, item: any): any {
+    return index;
+  }
 }

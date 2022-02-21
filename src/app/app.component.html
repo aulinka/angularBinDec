@@ -6,7 +6,7 @@ DEC <input type="number" [(ngModel)]="decimal" (change)="onDecimalChange()"/><br
   </tr>
   <tr>
     <td>BIN</td>
-    <td *ngFor="let bit of bits; let i = index; trackBy: trackByIndex"><input type="checkbox" [(ngModel)]="bits[i]" (change)="onChcekBoxChange()"/></td>
+    <td *ngFor="let bit of bits; let i = index; trackBy: trackByIndex"><input type="checkbox" [(ngModel)]="bits[i]" (change)="onCheckBoxChange()"/></td>
   </tr>
 </table>
 
